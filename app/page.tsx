@@ -34,7 +34,7 @@ export default async function Home({searchParams}:{searchParams:FilterProps}){
           <section id="cars">
             <div className="home__cars-wrapper">
               {cars.map((car) => (
-                <CarCard car={car} />
+                <CarCard car={car} key={car.model}/>
               ))}
             </div>
             <ShowMore
